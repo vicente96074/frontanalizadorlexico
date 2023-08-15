@@ -1,0 +1,4 @@
+.nav-link.active {
+    background-color: #007bff; /* Color de resaltado para el fondo */
+    color: #ffffff; /* Color de texto para el resaltado */
+}

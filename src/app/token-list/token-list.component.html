@@ -1,0 +1,94 @@
+<div class="d-flex justify-content-start align-items-center vh-100">
+    <div class="custom-buttons">
+        <button class="btn btn-primary dropdown-toggle btn-block" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            LOGICO
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of logicoTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            CONSTANTE
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of constanteTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            PALABRA CLAVE
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of palabraClaveTokens" (click)="selectToken(token)">
+                    {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ASIGNACION
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of asignacionTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ARITMETICO
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of aritmeticoTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            COMPARACION
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of comparacionTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            IDENTIFICADOR
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of identificadorTokens" (click)="selectToken(token)">
+                    {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            COMENTARIO
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of comentarioTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            SEPARADOR
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of separadorTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+        <button class="btn btn-primary dropdown-toggle btn-block ml-5" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            MALFORMADO
+        </button>
+        <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item border" *ngFor="let token of malformadoTokens" (click)="selectToken(token)"> {{
+                    token.lexema }}</a></li>
+        </ul>
+    </div>
+
+    <div class="border p-3 d-flex justify-content-center align-items-center vh-100">
+        <!-- Muestra la imagen seleccionada en la caja -->
+        <img *ngIf="selectedImage" [src]="selectedImage" alt="Imagen seleccionada" class="img-fluid"
+            style="max-width: 50%; max-height: 50%;">
+    </div>
+
+</div>

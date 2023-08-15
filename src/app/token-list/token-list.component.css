@@ -1,0 +1,24 @@
+.custom-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio entre los botones */
+    width: 200px; /* Ancho deseado para los botones */
+    margin-left: 20px; /* Aumentar el margen izquierdo para mover los botones hacia la derecha */
+}
+
+/* Agrega una clase específica a tu lista desplegable */
+.custom-dropdown-menu {
+    min-width: 200px;
+}
+
+/* Utiliza un selector más específico para los elementos dropdown-item */
+/* Cambia el color de fondo y el color del borde de los elementos dropdown-item */
+.dropdown-menu li .dropdown-item.border {
+    background-color: #73ff00; /* Cambia el color de fondo a azul */
+    border-color: #ffffff; /* Cambia el color del borde a azul */
+    color: #000000; /* Cambia el color del texto a blanco */
+    padding: 8px 12px;
+}
+
+
+
